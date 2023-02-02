@@ -37,5 +37,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: ${{ steps.<meta_id>.outputs.tags }}
-          labels: ${{ steps.<meta_id>.outputs.labels }}
+          tags: ${{ steps.meta-generator.outputs.tags }}
+          labels: ${{ steps.meta-generator.outputs.labels }}
